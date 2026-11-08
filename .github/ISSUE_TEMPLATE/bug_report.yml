@@ -1,0 +1,23 @@
+name: 🐞 Bug report
+description: Something is not working as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes: {label: What happened?, description: Describe the bug and what you expected instead}
+    validations: {required: true}
+  - type: textarea
+    id: steps
+    attributes: {label: Steps to reproduce, placeholder: "1. Paste URL...\n2. Click..."}
+    validations: {required: true}
+  - type: input
+    id: version
+    attributes: {label: App version}
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [Windows x64, Windows ARM64, Windows x86, Linux x64, Linux ARM64, macOS Apple Silicon, macOS Intel]
+  - type: textarea
+    id: logs
+    attributes: {label: Logs / screenshots}
